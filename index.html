@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tokei — Watch Collection Log</title>
+<meta name="description" content="Tokei is a free, private iPhone app for keeping a watch collection and logging which watch you wore today.">
+<style>
+  :root { --bg: #f5f4f0; --fg: #1d1f26; --muted: #5f6168; --accent: #2a9d94; --card: #ffffff; --line: #e0ded8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15161b; --fg: #eceff4; --muted: #a4a7ae; --accent: #3fb8af; --card: #1d1f26; --line: #2b2e36; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 20px 72px; }
+  header { display: flex; align-items: center; gap: 18px; margin-bottom: 36px; }
+  .icon { width: 72px; height: 72px; border-radius: 16px; background: #1d1f26; flex: none; }
+  h1 { font-size: 30px; margin: 0; letter-spacing: -0.01em; }
+  .tag { color: var(--muted); margin: 2px 0 0; }
+  h2 { font-size: 20px; margin: 36px 0 10px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-top: 12px; }
+  code { font: 15px ui-monospace, "SF Mono", Menlo, monospace; background: var(--line); padding: 1px 6px; border-radius: 6px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg class="icon" viewBox="0 0 1024 1024" aria-hidden="true"><rect width="1024" height="1024" fill="#1d1f26"/><g fill="#3fb8af"><circle cx="512" cy="156" r="24"/><circle cx="634" cy="178" r="24"/><circle cx="740" cy="238" r="24"/><circle cx="822" cy="332" r="24"/><circle cx="868" cy="450" r="24"/><circle cx="868" cy="574" r="24"/><circle cx="822" cy="692" r="24"/><circle cx="740" cy="786" r="24"/><circle cx="634" cy="846" r="24"/><circle cx="512" cy="868" r="24"/><circle cx="390" cy="846" r="24"/><circle cx="284" cy="786" r="24"/></g><g fill="#3a3d47"><circle cx="202" cy="692" r="24"/><circle cx="156" cy="574" r="24"/><circle cx="156" cy="450" r="24"/><circle cx="202" cy="332" r="24"/><circle cx="284" cy="238" r="24"/><circle cx="390" cy="178" r="24"/></g><g stroke="#eceff4" stroke-width="34" stroke-linecap="round"><line x1="512" y1="512" x2="512" y2="330"/><line x1="512" y1="512" x2="660" y2="600"/></g><circle cx="512" cy="512" r="28" fill="#3fb8af"/></svg>
+    <div>
+      <h1>Tokei</h1>
+      <p class="tag">Watch Collection Log for iPhone</p>
+    </div>
+  </header>
+
+  <p>Tokei is a quiet, private home for a watch collection and for the simple habit of noting which watch you wore today. It is free, has no account and no ads, and nothing leaves your phone except to your own iCloud.</p>
+
+  <h2>Support</h2>
+  <div class="card">
+    <p>Questions, problems, or ideas: <a href="https://github.com/TokeiApp/tokeiapp.github.io/issues">open an issue on GitHub</a>. Replies usually within a few days.</p>
+    <p class="muted">When reporting a problem, the version number from Tokei's Settings screen and a description of what you did help most. Never send your export archive unless asked; it contains your collection.</p>
+  </div>
+
+  <h2>Common questions</h2>
+  <ul>
+    <li><strong>Where is my data?</strong> On your phone, in Tokei's own storage. If you turn on iCloud sync, a copy also lives in your own iCloud account, where only your devices can read it.</li>
+    <li><strong>How do I back up?</strong> Tokei keeps the three most recent automatic backups itself. Settings ▸ Export collection writes a single file with every watch, photo and wear entry; keep it in Files or iCloud Drive. Settings ▸ Import restores it on a new phone.</li>
+    <li><strong>Why can't I log a sold watch?</strong> A sold watch keeps its history but leaves your rotation. Un-sell it from its page if it came back.</li>
+    <li><strong>Why does "cost per wear" hide its number?</strong> On purpose. Tap Show when you want to know.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Tokei collects no data about you. The full statement is on the <a href="privacy.html">privacy page</a>.</p>
+
+  <footer>Tokei is Japanese for watch. © 2026 Tokei. All trademarks belong to their owners.</footer>
+</main>
+</body>
+</html>
